@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input и Вывод</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Введите текст и нажмите кнопку</h1>
+    <input type="text" id="userInput" placeholder="Введите текст здесь">
+    <button onclick="showMessage()">Отправить</button>
+
+    <div id="output"></div>
+
+    <script>
+        function showMessage() {
+            const input = document.getElementById('userInput').value;
+            document.getElementById('output').textContent = `Вы ввели: ${input}`;
+        }
+    </script>
+</body>
+</html>
