@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ p {
     text-align: center;
 }
 
-/* Секция с приглашением */
 .invite-section {
     background-color: #f1c40f;
     padding: 60px 0;
@@ -62,7 +60,6 @@ p {
     background-color: #555;
 }
 
-/* Секция с функциональностью */
 .features-section {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -81,7 +78,6 @@ p {
     height: auto;
 }
 
-/* Секция с приглашением поделиться */
 .refer-section {
     background-color: #f1c40f;
     padding: 60px 0;
@@ -91,7 +87,6 @@ p {
     color: #333;
 }
 
-/* Нижний колонтитул */
 .footer {
     background-color: #f4f7f7;
     color: #fff;
