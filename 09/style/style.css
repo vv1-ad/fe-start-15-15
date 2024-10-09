@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    padding: 60px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c2e35;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.details {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox для планов */
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Отступы между карточками */
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px); /* Эффект при наведении */
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000;
+}
+
+.description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.plan ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c2e35;
+}
+
+.button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: #d6d6d6;
+}
+
+.professional {
+    background-color: #fdf0f5;
+    border-color: #f7d7e3;
+}
+
+.professional-button {
+    background-color: #ff0066;
+    color: #fff;
+}
+
+.professional-button:hover {
+    background-color: #e6005c;
+}
+
+@media (max-width: 900px) {
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
